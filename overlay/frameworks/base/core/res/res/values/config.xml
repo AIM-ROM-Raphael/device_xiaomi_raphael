@@ -496,5 +496,16 @@
 	<bool name="config_dozePulsePickup">true</bool>
 	<bool name="config_dozePulseTilt">true</bool>
 	<bool name="config_dozePulseProximity">true</bool>
+
+    <!-- The list absolute paths of jar/apk files containing the device specific handlers,
+        delimited by File.pathSeparator, which defaults to ":" on Android  -->
+    <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/XiaomiParts/XiaomiParts.apk</string>
+
+    <!-- Full qualified name of the class that implements
+        com.android.internal.os.DeviceKeyHandler interface. -->
+    <string name="config_deviceKeyHandlerClass" translatable="false">org.lineageos.settings.KeyHandler</string>
+
+    <bool name="config_proxiSensorWakupCheck">false</bool>
+
 </resources>
 
